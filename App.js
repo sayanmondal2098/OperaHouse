@@ -1,10 +1,19 @@
-import Raect from 'react';
-import { View, Text } from 'react-native';
+import React from 'react';
+import { createAppContainer } from 'react-navigation';
+import { createDrawerNavigator } from 'react-navigation-drawer';
 
-export default function App(){
-  return(
-    <View>
-      
-    </View>
-  );
-}
+import Home  from "./src/pages/Home";
+import Contact  from "./src/Contact";
+import CustomDrawer from "./src/components/CustomDrawer";
+
+const Application = createAppContainer(
+  createDrawerNavigator({
+    Home,
+    Contact
+  },{
+    initialRouteName: 'Home',
+    contentComponent: CustomDrawer
+  })
+)
+
+export default Application;
