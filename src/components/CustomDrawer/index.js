@@ -21,7 +21,6 @@ const style = StyleSheet.create({
     container: {
         flex:1,
     },
-
     userArea:{
         marginTop: 50,
         marginLeft:10,
