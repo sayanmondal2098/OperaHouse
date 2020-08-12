@@ -24,7 +24,8 @@ const style = StyleSheet.create({
     userArea:{
         marginTop: 50,
         marginLeft:10,
-        marginBottom: 10
+        marginBottom: 10,
+                
     },
     user:{
         margin: 20,
