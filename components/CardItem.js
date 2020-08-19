@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../assets/styles';
-
+import { FontAwesome5, Feather } from '@expo/vector-icons';
 import { Text, View, Image, Dimensions, TouchableOpacity } from 'react-native';
 import Icon from './Icon';
 
@@ -44,7 +44,7 @@ const CardItem = ({
       {matches && (
         <View style={styles.matchesCardItem}>
           <Text style={styles.matchesTextCardItem}>
-            <Icon name="heart" /> {matches}% Match!
+            <FontAwesome5 name="heart"/>{matches}% Match!
           </Text>
         </View>
       )}
@@ -70,13 +70,13 @@ const CardItem = ({
         <View style={styles.actionsCardItem}>
           <TouchableOpacity style={styles.miniButton}>
             <Text style={styles.star}>
-              <Icon name="star" />
+            <FontAwesome5 name="star"/>
             </Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.button} onPress={() => onPressLeft()}>
             <Text style={styles.like}>
-              <Icon name="like" />
+            <FontAwesome5 name="thumbs-up"/>
             </Text>
           </TouchableOpacity>
 
@@ -85,13 +85,13 @@ const CardItem = ({
             onPress={() => onPressRight()}
           >
             <Text style={styles.dislike}>
-              <Icon name="dislike" />
+            <FontAwesome5 name="thumbs-down"/>
             </Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.miniButton}>
             <Text style={styles.flash}>
-              <Icon name="flash" />
+            <Feather name="zap"/>
             </Text>
           </TouchableOpacity>
         </View>
