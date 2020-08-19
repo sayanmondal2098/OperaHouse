@@ -7,6 +7,7 @@ import HomeScreen from "./containers/Home";
 import MatchesScreen from "./containers/Matches";
 import MessagesScreen from "./containers/Messages";
 import ProfileScreen from "./containers/Profile";
+import { FontAwesome5, Feather } from '@expo/vector-icons';
 import Icon from "./components/Icon";
 
 const App = createBottomTabNavigator(
@@ -18,7 +19,8 @@ const App = createBottomTabNavigator(
 					const iconFocused = focused ? "#7444C0" : "#363636";
 					return (
 						<Text style={[styles.iconMenu, { color: iconFocused }]}>
-							<Icon name="explore" />
+              <FontAwesome5 name="wpexplorer"/>
+							{/* <Icon name="explore" /> */}
 						</Text>
 					);
 				}
@@ -31,7 +33,8 @@ const App = createBottomTabNavigator(
 					const iconFocused = focused ? "#7444C0" : "#363636";
 					return (
 						<Text style={[styles.iconMenu, { color: iconFocused }]}>
-							<Icon name="heart" />
+							{/* <Icon name="heart" /> */}
+              <FontAwesome5 name="heart"/>
 						</Text>
 					);
 				}
@@ -44,7 +47,8 @@ const App = createBottomTabNavigator(
 					const iconFocused = focused ? "#7444C0" : "#363636";
 					return (
 						<Text style={[styles.iconMenu, { color: iconFocused }]}>
-							<Icon name="chat" />
+							{/* <Icon name="chat" /> */}
+              <FontAwesome5 name="comments" />
 						</Text>
 					);
 				}
@@ -57,7 +61,8 @@ const App = createBottomTabNavigator(
 					const iconFocused = focused ? "#7444C0" : "#363636";
 					return (
 						<Text style={[styles.iconMenu, { color: iconFocused }]}>
-							<Icon name="user" />
+							{/* <Icon name="user" /> */}
+              <FontAwesome5 name="user" />
 						</Text>
 					);
 				}

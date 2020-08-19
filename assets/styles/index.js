@@ -225,10 +225,10 @@ export default StyleSheet.create({
 		fontFamily: ICON_FONT,
 		fontSize: 12,
 		color: DARK_GRAY,
-		paddingHorizontal: 10
+		// paddingHorizontal: 10
 	},
 	infoContent: {
-		color: GRAY,
+		color: BLACK,
 		fontSize: 13
 	},
 
